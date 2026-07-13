@@ -50,7 +50,7 @@ begin
         when "101" =>
             RESULT <= ("0" & A_u) + ("0" & B_u) + unsigned'( "00" & C0 );
 
-        -- 🔥 RESTA CORRECTA
+        -- RESTA CORRECTA
         when "110" =>
             if C0 = '1' then
                 RESULT <= ("0" & A_u) - ("0" & B_u);
